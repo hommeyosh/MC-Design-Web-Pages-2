@@ -11,7 +11,6 @@
         .header-container {
             display: flex;
             align-items: center;
-            justify-content: space-between;
             padding: 10px 20px;
             background-color: #222;
         }
@@ -29,14 +28,13 @@
             margin: 0;
         }
         .nav-container {
-            display: flex;
-            justify-content: flex-start;
-            flex-grow: 1;
-            padding-left: 55px;
+            text-align: center;
+            margin-top: 20px;
         }
         .nav-container ul {
             list-style: none;
             display: flex;
+            justify-content: center;
             gap: 20px;
             padding: 0;
             margin: 0;
@@ -73,6 +71,7 @@
         }
         .hero {
             text-align: center;
+            margin-top: 20px;
         }
         .cta-button {
             display: inline-block;
@@ -91,7 +90,7 @@
     </style>
 </head>
 <body>
-    <!-- Header Section with Navigation -->
+    <!-- Header Section -->
     <header class="header-container">
         <div class="header-left">
             <img src="Logo6.png" alt="MC Design Logo">
@@ -100,14 +99,16 @@
                 <p>Logos | Branding | Web Design</p>
             </div>
         </div>
-        <nav class="nav-container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="WebSite.html">WebSites</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <!-- Navigation Bar Moved Below Header and Centered -->
+    <nav class="nav-container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WebSite.html">WebSites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section: Main Call to Action -->
     <section class="hero">
