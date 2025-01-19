@@ -74,8 +74,18 @@
             text-align: center;
         }
         .cta-button {
-            display: block;
-            margin: 0 auto;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: red;
+            color: white;
         }
     </style>
 </head>
@@ -102,7 +112,7 @@
     <section class="hero">
         <h2>Bringing Your Brand to Life</h2>
         <p>Professional designs that make your business stand out.</p>
-        <a href="#contact" class="cta-button">Get a Quote</a>
+        <a href="contact.html" class="cta-button">Get a Quote</a>
     </section>
 
     <!-- About Section: Christopher Hoffman Bio -->
