@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>MC Design - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,32 +15,52 @@
             text-align: center;
         }
         .header-container {
-            background-color: #ff0000;
-            padding: 20px;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #222;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         .header-left {
             display: flex;
             align-items: center;
         }
         .header-left img {
-            height: 80px;
-            margin-right: 15px;
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
         }
         .header-left h1, .header-left p {
-            margin: 0;
             color: white;
+            margin: 0;
         }
-        nav {
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .nav-container ul {
+            list-style: none;
             display: flex;
             gap: 20px;
+            padding: 0;
+            margin: 0;
         }
-        nav a {
+        .nav-container ul li {
+            background: #444;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .nav-container ul li a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
             font-weight: bold;
         }
         .gallery {
@@ -47,7 +68,7 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            padding: 20px;
+            padding: 120px 20px 20px;
         }
         .gallery-item {
             text-align: center;
@@ -64,7 +85,7 @@
             margin-top: 5px;
         }
         footer {
-            background-color: #ff0000;
+            background-color: #222;
             color: white;
             padding: 10px;
             position: relative;
@@ -74,6 +95,7 @@
     </style>
 </head>
 <body>
+    <!-- Header Section with Navigation -->
     <header class="header-container">
         <div class="header-left">
             <img src="Logo6.png" alt="MC Design Logo">
@@ -82,14 +104,16 @@
                 <p>Logos | Branding | Web Design</p>
             </div>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="WebSite.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+        <nav class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="WebSite.html">WebSites</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Gallery Section -->
     <div class="gallery">
         <div class="gallery-item">
             <img src="IMG_20241204_184517693_HDR.jpg" alt="GameDev">
@@ -116,6 +140,8 @@
             <p>Guns</p>
         </div>
     </div>
+
+    <a href="https://square.link/u/YOUR_SQUARE_LINK" class="cta-button">Buy Now</a>
 
     <footer>
         &copy; 2025 MC Design. All Rights Reserved.
